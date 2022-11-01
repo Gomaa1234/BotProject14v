@@ -1,3 +1,4 @@
+//see if the bot is runing
 module.exports = {
 	name: 'ready',
 	once: true,

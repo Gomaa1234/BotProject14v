@@ -8,6 +8,7 @@ module.exports = {
 		.addIntegerOption(option => option.setName('amount').setDescription('Number of messages to prune'))
 		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 	async execute(interaction) {
+		//delete amount of messages
 		const amount = interaction.options.getInteger('amount');
 
 		if (amount < 1 || amount > 99) {

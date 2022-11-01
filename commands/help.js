@@ -5,6 +5,7 @@ module.exports={
 		.setName('help')
 		.setDescription('help description'),
 	async execute(interaction,Client) {
+        // sends all commands to the user
 		const user = await interaction.user;
         user.send({
             "content": `help commands`,

@@ -5,6 +5,7 @@ module.exports = {
 		.setName('scary')
 		.setDescription('Boo!'),
 	async execute(interaction) {
+        //hollowen
         const random = (arr) => arr[Math.floor(Math.random() * arr.length)];
         const images = [
         'https://i.imgur.com/r5QjV70.jpg',
@@ -36,30 +37,14 @@ module.exports = {
         'https://i.imgur.com/xYBfqPq.png',
         'https://i.imgur.com/829Re5S.jpg',
         'https://i.imgur.com/yk2u0ci.jpg',
+        'https://i.imgur.com/kpoGlA2.png',
+        'https://i.imgur.com/Tk3qASI.jpg',
+        'https://i.imgur.com/VeQC6yz.png',
+        'https://i.imgur.com/QItXUD4.jpg',
+        'https://i.imgur.com/HjSCTX2.png',
         ];
         let img = random(images);
         console.log(img);
 		return await interaction.reply(img)
 	},
 };
-
-/*const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
-
-await lib.discord.channels['@0.3.2'].messages.create({
-  "channel_id": `${context.params.event.channel_id}`,
-  "content": "",
-  "tts": false,
-  "embeds": [
-    {
-      "type": "rich",
-      "title": "",
-      "description": "",
-      "color": 0x00FFFF,
-      "image": {
-        "url": `https://pbs.twimg.com/media/FfXgOKNXkAE4D2x?format=jpg&name=small`,
-        "height": 0,
-        "width": 0
-      }
-    }
-  ]
-});*/
