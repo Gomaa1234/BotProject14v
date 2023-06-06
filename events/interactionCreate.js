@@ -1,4 +1,4 @@
-//interações entre user e o bot
+//interação entre user e o bot
 module.exports = {
 	name: 'interactionCreate',
 	async execute(interaction) {

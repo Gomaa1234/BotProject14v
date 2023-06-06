@@ -3,7 +3,7 @@ const path = require('node:path');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { clientId, token } = require('../config.json');
-// when the bot is connected to a server all all commands
+// when the bot is connected to a server the bot adds all commands to the server.
 module.exports = {
 	name: 'guildCreate',
 	async execute(guild) {
