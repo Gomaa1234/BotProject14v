@@ -1,7 +1,7 @@
 # BotProject14v
 This project is a Discord bot with a website.
 
-this bot is a good project for start a discord bot.
+this bot is a good project to start a discord bot.
 
 Commands:
 
